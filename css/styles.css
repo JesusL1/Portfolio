@@ -198,9 +198,17 @@ figure {
 
 img {
   vertical-align: middle;
-  border-style: none;
+  /* border-style: solid;
+  border-color:#467370;
+  border-width: 0.15rem; */
 }
 
+.large-img {
+  vertical-align: middle;
+  border-style: solid;
+  border-color:#467370;
+  border-width: 0.15rem;
+}
 svg {
   overflow: hidden;
   vertical-align: middle;
@@ -477,7 +485,7 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .img-thumbnail {
@@ -600,8 +608,10 @@ pre code {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -0.75rem;
-  margin-left: -0.75rem;
+  /* margin-right: -0.75rem;
+  margin-left: -0.75rem; */
+  margin-right: -8.5rem;
+  margin-left: -8.5rem;
 }
 
 .no-gutters {
@@ -4075,6 +4085,7 @@ input[type=button].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  font-size:1.2rem;
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -4408,7 +4419,7 @@ input[type=button].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.855);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -9959,6 +9970,10 @@ a.text-black:hover, a.text-black:focus {
   color: rgba(0, 0, 0, 0.5) !important;
 }
 
+.text-black-70 {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
 .text-white-50 {
   color: rgba(255, 255, 255, 0.5) !important;
 }
@@ -10164,6 +10179,9 @@ body {
   }
 }
 
+
+
+
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
@@ -10180,7 +10198,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10199,6 +10217,7 @@ body {
 .masthead h2 {
   max-width: 20rem;
   font-size: 1rem;
+  line-height: 4rem;
 }
 @media (min-width: 768px) {
   .masthead h1 {
@@ -10217,13 +10236,13 @@ body {
     letter-spacing: 0.8rem;
   }
   .masthead h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
+    max-width: 70rem;
+    font-size: 1.7rem;
   }
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 6rem;
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
@@ -10231,7 +10250,7 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 4rem 0;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -10239,7 +10258,7 @@ body {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    /* border-left: 0.5rem solid #64a19d; */
   }
 }
 .projects-section .project-text {
@@ -10284,7 +10303,7 @@ body {
   border-bottom: 0.25rem solid #64a19d;
 }
 .contact-section .card h4 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -10297,7 +10316,7 @@ body {
 .contact-section .social {
   margin-top: 5rem;
 }
-.contact-section .social a {
+.social a {
   text-align: center;
   height: 3rem;
   width: 3rem;
@@ -10306,13 +10325,17 @@ body {
   line-height: 3rem;
   color: rgba(255, 255, 255, 0.3);
 }
-.contact-section .social a:hover {
+.social a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
-.contact-section .social a:active {
+.social a:active {
   color: #fff;
 }
 
 .footer {
   padding: 5rem 0;
+}
+
+.skills {
+  font-size: 1.1rem;
 }
